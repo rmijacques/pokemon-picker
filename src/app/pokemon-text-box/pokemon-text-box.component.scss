@@ -1,0 +1,58 @@
+.outer-box {
+    border: 2px solid black;
+    padding: 3px;
+    position: relative;
+}
+
+.outer {
+    overflow: hidden;
+}
+
+:host {
+    background: white;
+    font-family: 'Pokemon Pixel Font';
+    font-size: 1.5rem;
+}
+
+.outer {
+    overflow: hidden;
+}
+
+.inner-box {
+    border: 2px solid black;
+
+    p {
+        margin:10px;
+    }
+}
+
+.inner-box i {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.inner-box .top {
+    margin-top: -5px;
+}
+
+.inner-box .bottom {
+    margin-top: -5px;
+    margin-bottom: -20px;
+}
+
+.inner-box .left {
+    float: left;
+    margin-left: -5px;
+}
+
+.inner-box .right {
+    float: right;
+    margin-right: -5px;
+}
+
+.content {
+    min-height: 80px;
+}

@@ -11,6 +11,15 @@ export class AppComponent {
   teams : Team[] = [];
   teamsConfigured = false;
 
+  ngOnInit(){
+
+    this.teams.push({name:"Pikachu",maxStudentsNumber:6,studentsName:[],imageUrl:'pikachu.png'});
+    this.teams.push({name:"Carapuce",maxStudentsNumber:6,studentsName:[],imageUrl:'carapuce.png'});
+    this.teams.push({name:"Salameche",maxStudentsNumber:6,studentsName:[],imageUrl:'salameche.png'});
+    this.teams.push({name:"Bulbizarre",maxStudentsNumber:6,studentsName:[],imageUrl:'bulbizarre.png'});
+    this.teamsConfigured = true;
+  }
+
   teamConfigured(teams : Team[]){
     this.teams = teams;
     this.teamsConfigured = true;

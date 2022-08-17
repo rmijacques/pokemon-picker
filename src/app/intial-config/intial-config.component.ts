@@ -17,7 +17,7 @@ export class IntialConfigComponent implements OnInit {
 
   ngOnInit(): void {
     for(let teamName of this.TEAM_NAMES){
-      this.teams.push({name:teamName,maxStudentsNumber:6,studentsName:[]});
+      this.teams.push({name:teamName,maxStudentsNumber:6,studentsName:[],imageUrl:""});
     }    
   }
 

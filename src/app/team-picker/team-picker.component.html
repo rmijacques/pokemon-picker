@@ -1,4 +1,7 @@
-<div class="card">
-    <button class="btn btn-primary" (click)="pickTeam()">Pick a team</button>
-    <p>{{teamPickedName}}</p>
+<div class="card pokemon-chooser-background" (click)="pickTeam()">
+    <app-pokemon-text-box *ngIf="!teamPickedImageUrl && !allTeamsCompleted" [text]="'Choisis ton pokemon en cliquant ci-dessous'" class="mt-2 mx-3"></app-pokemon-text-box>
+    <app-pokemon-text-box *ngIf="teamPickedImageUrl && !allTeamsCompleted" [text]="'Tu est de la team '+teamPickedName" class="mt-2 mx-3"></app-pokemon-text-box>
+    <app-pokemon-text-box *ngIf="allTeamsCompleted" [text]="'Toutes les equipes sont faites'" class="mt-2 mx-3"></app-pokemon-text-box>
+
+    <img [src]="'/assets/images/'+ teamPickedImageUrl" class="team-picked-image" *ngIf="teamPickedImageUrl"/>
 </div>

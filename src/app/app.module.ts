@@ -7,14 +7,15 @@ import { IntialConfigComponent } from './intial-config/intial-config.component';
 import { FormsModule } from '@angular/forms';
 import { TeamPickerComponent } from './team-picker/team-picker.component';
 import { TeamSummaryComponent } from './team-summary/team-summary.component';
+import { PokemonTextBoxComponent } from './pokemon-text-box/pokemon-text-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntialConfigComponent,
     TeamPickerComponent,
-    TeamSummaryComponent
-  ],
+    TeamSummaryComponent,
+    PokemonTextBoxComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

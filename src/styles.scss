@@ -2,3 +2,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'Pokemon Pixel Font';
+    src: url('./assets/fonts/Pokemon-Pixel-Font.woff2') format('woff2'),
+        url('./assets/fonts/Pokemon-Pixel-Font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
