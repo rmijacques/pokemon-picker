@@ -1,3 +1,9 @@
 :host{
     height: 100%;
 }
+
+.global-container{
+    display:flex;
+    background: url('../assets/images/background.jpg') no-repeat center center;
+    background-size: cover
+}
