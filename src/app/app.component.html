@@ -1,4 +1,4 @@
-<div class="justify-content-center align-items-center w-100 h-100 flex-column" style="display:flex;background: url('../assets/images/background.jpg') no-repeat center center;background-size: cover">
+<div class="justify-content-center align-items-center w-100 h-100 flex-column" style="display:flex;background: url('assets/images/background.jpg') no-repeat center center;background-size: cover">
   <app-intial-config (teamsBuiltEM)="teamConfigured($event)" *ngIf="!teamsConfigured"></app-intial-config>
   <app-team-summary *ngIf="teamsConfigured" [teams]="teams" class="mb-3"></app-team-summary>
   <app-team-picker *ngIf="teamsConfigured" [teams]="teams" (teamPicked)="teamPicked($event)"></app-team-picker>
