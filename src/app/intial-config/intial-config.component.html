@@ -1,0 +1,12 @@
+    <div class="card p-3 mx-2">
+        <p>Nombre de membre par équipe :</p>
+        <div class="flex-col">
+            <div class="my-3" *ngFor="let team of teams">
+                <label>Team {{team.name}} :</label>
+                <div class="input-group">
+                    <input class="form-control"  [(ngModel)]="team.maxStudentsNumber">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="onValidation()">Valider</button>
+    </div>
